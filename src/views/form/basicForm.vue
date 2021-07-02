@@ -2,9 +2,9 @@
  * @Author: zhengzhuang
  * @Date: 2021-05-28 15:02:05
  * @LastEditors: zhengzhuang
- * @LastEditTime: 2021-05-31 09:02:01
+ * @LastEditTime: 2021-07-02 15:53:54
  * @Description: 基础表单 basicForm
- * @FilePath: /vue3-vite-template/src/views/form/basicForm.vue
+ * @FilePath: /vue3-element3-admin/src/views/form/basicForm.vue
 -->
 <template>
   <div>
@@ -101,7 +101,7 @@ export default {
     function submitForm() {
       form.value.validate((valid) => {
         if (valid) {
-          alert('submit!')
+          alert('提交成功!')
         } else {
           console.log('error submit!!')
           return false

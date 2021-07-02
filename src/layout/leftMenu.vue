@@ -2,14 +2,16 @@
  * @Author: zhengzhuang
  * @Date: 2021-05-27 11:06:21
  * @LastEditors: zhengzhuang
- * @LastEditTime: 2021-05-28 16:42:05
+ * @LastEditTime: 2021-07-02 15:40:44
  * @Description: 侧边栏 leftMenu
- * @FilePath: /vue3-vite-template/src/layout/leftMenu.vue
+ * @FilePath: /vue3-element3-admin/src/layout/leftMenu.vue
 -->
 <template>
   <div class="box">
     <div class="head-top-box">
-      <h2 class="head-top">Vue3</h2>
+      <router-link to="/">
+        <h2 class="head-top">Vue3</h2>
+      </router-link>
     </div>
     <el-menu
       :default-active="defaultActive"
