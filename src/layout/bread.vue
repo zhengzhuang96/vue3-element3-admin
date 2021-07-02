@@ -2,7 +2,7 @@
  * @Author: zhengzhuang
  * @Date: 2021-05-27 17:18:09
  * @LastEditors: zhengzhuang
- * @LastEditTime: 2021-07-02 16:23:36
+ * @LastEditTime: 2021-07-02 17:19:06
  * @Description: 面包屑 bread
  * @FilePath: /vue3-element3-admin/src/layout/bread.vue
 -->
@@ -89,5 +89,6 @@ export default defineComponent({
   color: rgba(0, 0, 0, 0.85);
   font-size: 14px;
   font-weight: normal;
+  
 }
 </style>
