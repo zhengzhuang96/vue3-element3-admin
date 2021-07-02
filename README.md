@@ -1,6 +1,8 @@
 # vue3-element3-admin
 🔥 🎉 基于Vue3.0 + Vite2.0 + Vue-Router4.0 + Element3 的后台管理系统解决方案
 
+后台管理系统 Vue3 版本线上预览地址：https://zhengzhuang96.github.io/vue3-element3-admin/dist/
+
 账号：admin，密码：12345
 
 ### 页面功能
