@@ -2,12 +2,15 @@
  * @Author: zhengzhuang
  * @Date: 2021-05-27 17:18:09
  * @LastEditors: zhengzhuang
- * @LastEditTime: 2021-05-31 09:39:02
+ * @LastEditTime: 2021-07-02 16:23:36
  * @Description: 面包屑 bread
- * @FilePath: /vue3-vite-template/src/layout/bread.vue
+ * @FilePath: /vue3-element3-admin/src/layout/bread.vue
 -->
 <template>
   <div class="body-box">
+    <el-tag v-for="tag in tags" :key="tag.name" closable :type="tag.type">
+      {{tag.name}}
+    </el-tag>
     <el-breadcrumb separator="/">
       <el-breadcrumb-item v-for="(item, key) in routeBread" :key="key">
         <router-link v-if="item.path !== undefined" :to="item.path">{{ item.title }}</router-link>
@@ -19,7 +22,7 @@
   </div>
 </template>
 <script>
-import { defineComponent, ref, toRaw } from 'vue'
+import { defineComponent, ref, toRaw, reactive, toRefs } from 'vue'
 import { useRoute } from 'vue-router'
 
 export default defineComponent({
@@ -33,6 +36,16 @@ export default defineComponent({
     const route = useRoute()
     const routeBread = ref([])
     const routeTitle = ref('')
+    const state = reactive({
+      tags: [
+        { name: '标签一', type: '' },
+        { name: '标签二', type: 'success' },
+        { name: '标签三', type: 'info' },
+        { name: '标签四', type: 'warning' },
+        { name: '标签五', type: 'danger' }
+      ]
+    })
+
     route.matched.filter((item) => {
       if (item.meta.title) {
         const title = item.meta.title;
@@ -53,7 +66,8 @@ export default defineComponent({
 
     return {
       routeBread,
-      routeTitle
+      routeTitle,
+      ...toRefs(state)
     }
   },
 })
