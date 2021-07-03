@@ -1,0 +1,1 @@
+import{_ as a}from"./index.5b3f56a5.js";import{d as s,f as n,o as e,a as o,b as r,i as d}from"./vendor.d6795fcd.js";const t=s({name:"analysis",components:{bread:a},setup(){}}),i=d(" 分析页面 analysis ");t.render=function(a,s,d,t,f,m){const c=n("bread");return e(),o("div",null,[r(c),i])};export default t;
