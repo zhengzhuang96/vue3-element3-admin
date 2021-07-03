@@ -2,7 +2,7 @@
  * @Author: zhengzhuang
  * @Date: 2021-05-27 11:06:21
  * @LastEditors: zhengzhuang
- * @LastEditTime: 2021-07-02 15:40:44
+ * @LastEditTime: 2021-07-03 17:47:04
  * @Description: 侧边栏 leftMenu
  * @FilePath: /vue3-element3-admin/src/layout/leftMenu.vue
 -->
@@ -21,7 +21,7 @@
       active-text-color="#fff"
       :router="true"
       :collapse="isCollapse"
-      :unique-opened="true"
+      :unique-opened="false"
     >
       <el-submenu
         class="box-submenu"

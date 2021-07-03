@@ -2,9 +2,9 @@
  * @Author: zhengzhuang
  * @Date: 2021-05-27 10:59:17
  * @LastEditors: zhengzhuang
- * @LastEditTime: 2021-05-28 16:17:27
+ * @LastEditTime: 2021-07-03 10:17:20
  * @Description: In User Settings Edit
- * @FilePath: /vue3-vite-template/src/layout/layout.vue
+ * @FilePath: /vue3-element3-admin/src/layout/layout.vue
 -->
 <template>
   <div class="body-box">
@@ -21,15 +21,6 @@
         </el-main>
       </el-container>
     </el-container>
-    <!-- <el-container>
-      <el-header>Header</el-header>
-      <el-container>
-        <el-aside>
-          <leftMenu />
-        </el-aside>
-        <el-main>Main</el-main>
-      </el-container>
-    </el-container>-->
   </div>
 </template>
 <script>
@@ -73,6 +64,7 @@ export default defineComponent({
 .el-footer {
   background-color: #b3c0d1;
   padding: 0;
+  height: auto!important;
 }
 
 .el-aside {
