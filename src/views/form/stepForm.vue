@@ -2,9 +2,9 @@
  * @Author: zhengzhuang
  * @Date: 2021-05-31 09:51:44
  * @LastEditors: zhengzhuang
- * @LastEditTime: 2021-05-31 10:16:32
+ * @LastEditTime: 2021-07-08 11:46:25
  * @Description: 分步表单 stepForm
- * @FilePath: /vue3-vite-template/src/views/form/stepForm.vue
+ * @FilePath: /vue3-element3-admin/src/views/form/stepForm.vue
 -->
 <template>
   <div>
@@ -18,6 +18,8 @@
 
       <el-button style="margin-top: 12px;" @click="next">下一步</el-button>
     </div>
+    <p>1</p>
+    <spark-button>123123123</spark-button>
   </div>
 </template>
 
